@@ -8,6 +8,7 @@ header, footer {
     background-color: #0F172A;
     color: #FFFFFF;
     text-align: center;
+    padding: 24px;
 }
 
 header h1, footer p {
@@ -25,4 +26,11 @@ a {
 nav a {
     color: #FFFFFF;
     text-decoration: none;
+}
+
+.section-card {
+    background-color: #FFFFFF;
+    border: 1px solid #e3e6ec;
+    padding: 24px;
+    margin-bottom: 24px;
 }
