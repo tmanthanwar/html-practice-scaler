@@ -34,3 +34,42 @@ nav a {
     padding: 24px;
     margin-bottom: 24px;
 }
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 98%;
+    padding: 10px;
+    margin-top: 4px;
+    border: 1px solid #e3e6ec;
+    border-radius: 4px;
+    font : inherit;
+}
+
+fieldset {
+    border: 1px solid #e3e6ec;
+    /* padding: 16px; */
+    margin-top: 16px;
+}
+
+button {
+    background-color: #3B82F6;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 16px;
+    margin-top: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: inherit;
+    border-radius: 4px;
+}
