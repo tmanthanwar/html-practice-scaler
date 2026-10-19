@@ -4,6 +4,17 @@ body {
     background-color: #F8FAFC;
 }
 
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.site-header {
+    position: sticky;
+    top: 0;
+}
+
 header, footer {
     background-color: #0F172A;
     color: #FFFFFF;
@@ -35,12 +46,15 @@ nav a {
     margin-bottom: 24px;
 }
 
-main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 16px;
+span.project-status {
+    display: inline-block;
+    background-color: #3B82F6;
+    color: #FFFFFF;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-bottom: 8px;
 }
-
 label {
     display: block;
     margin-top: 12px;
@@ -56,13 +70,24 @@ input, select, textarea {
     font : inherit;
 }
 
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+    padding: 0;
+    margin: 12px 6px 0 0;
+}
+
+input[type="radio"] + label, input[type="checkbox"] + label {
+    display: inline-block;
+}
+
 fieldset {
     border: 1px solid #e3e6ec;
-    /* padding: 16px; */
-    margin-top: 16px;
+    padding: 16px;
+    margin: 16px 0;
 }
 
 button {
+    display: block;
     background-color: #3B82F6;
     color: #FFFFFF;
     border: none;
@@ -72,4 +97,37 @@ button {
     font-size: 16px;
     font-family: inherit;
     border-radius: 4px;
+}
+
+#skills li {
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    padding: 6px 10px;
+    background-color: #e5e7e9;
+    border: 1px solid #6b6e74;
+}
+
+.featured-project{
+    position: relative;
+}
+
+.project-status{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 4px 8px;
+    background-color: #3B82F6;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+.floating-contact {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 4px;
+    background-color: #3B82F6;
+    color: #FFFFFF;
+    text-decoration: none;
 }

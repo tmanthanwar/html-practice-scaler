@@ -7,11 +7,10 @@
     <title>StackFolio</title>
 </head>
 <body>
-    <header>
+    <header class="site-header">
         <h1>My Portfolio</h1>
         <p>I am creating this portfolio using HTML.</p>
-    </header>
-    <nav>
+        <nav>
             
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
@@ -19,6 +18,8 @@
                 <a href="#contact">Contact</a>
             
         </nav>
+    </header>
+    
     <main>
         <section id="about" class="section-card">
             <h2>About Me</h2>
@@ -30,25 +31,38 @@
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
-                <li>React </li>
-                <li>Node.js</li>
+                <li>MongoDB</li>
+                <li>SQL</li>
+                <li>Backend</li>
+                <li>React</li>
+                <li>Python</li>
+                <li>NodeJS</li>
+                <li>Tailwind</li>
+                <li>Express</li>
             </ul>
         </section>
 
         <section id="projects" class="section-card">
             <h2>Projects</h2>
-            <article>
-                <h3>Personal Portfolio</h3>
-                <p>A simple portfolio built with semantic HTML to introduce my skills and projects.</p>
-            </article>
+            <div class="project-card">
+                <article class="project-card featured-project">
+                    <span class="project-status">Featured</span>
+                    <h3>Portfolio Website</h3>
+                    <p>A personal portfolio website built with HTML, CSS, and JavaScript to showcase my projects and skills.</p>
+                </article>
+
+                <article class="project-card featured-project">
+                    <h3>Weather App</h3>
+                    <p>A future project where I will learn APIs and JavaScript.</p>
+                    <a href="#contact">Ask me about this project?</a>
+                </article>
+            </div>
         </section>
 
         <section id="contact" class="section-card">
-            <h2>Contact Me</h2>
-            <p>
-                If you would like to discuss your project 
-                feel free to fill out the form below.
-            </p>
+            <h2>Contact</h2>
+
+            <p>Feel free to reach out to me using the form below.</p>
 
             <form action="#" method="post">
                 <label for="name">Name:</label>
@@ -74,17 +88,18 @@
                     <label for="contact-email">Email</label>
                     <input type="radio" id="contact-phone" name="contact-method" value="contact-phone">
                     <label for="contact-phone">Phone</label>
-                    <input type="checkbox" id="subscribe" name="subscribe">
-                    <label for="subscribe">Agree to terms and conditions</label>
-                    <button type="submit">Submit</button>
-                </fieldset>                
+                </fieldset>  
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Agree to terms and conditions</label>
+                <button type="submit">Submit</button>              
             </form>
             
         </section>
     </main>
     <footer>
-        <p>Contact Information : tmanthanwar@gmail.com</p>
-        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        <p>Built with HTML as part my fullstack learning journey</p>
     </footer>
+
+    <a href="#contact" class="floating-contact">Contact</a>
 </body>
 </html>
